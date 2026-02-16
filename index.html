@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Health Triage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>SymptoCare</h1>
+    <div class="actions">
+      <button id="langToggle" class="btn ghost">🌐 EN</button>
+      <button id="themeToggle" class="btn ghost">🌙 Dark</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Enter Your Symptoms</h2>
+    <textarea id="symptomsInput" placeholder="Example: fever and headache for 2 days"></textarea>
+
+    <div class="btn-row">
+      <button id="analyzeBtn" class="btn primary">Analyze</button>
+      <a href="help.html" class="btn secondary">Find Help Near Me 🏥</a>
+    </div>
+
+    <!-- Result Card -->
+    <div id="resultBox" class="result-card hidden">
+      <p id="resultText"></p>
+    </div>
+
+    <!-- Follow-up for duration (Problem #4) -->
+    <div id="followUpBox" class="followup hidden">
+      <p>How long have you had these symptoms?</p>
+      <div class="chips">
+        <button class="chip" data-days="1">Less than 24 hours</button>
+        <button class="chip" data-days="2">1–2 days</button>
+        <button class="chip" data-days="3">More than 2 days</button>
+      </div>
+    </div>
+
+    <!-- Disclaimer (shown after result) -->
+    <p id="disclaimer" class="disclaimer hidden">
+      ⚠️ This is not a medical diagnosis. Always consult a qualified medical professional.
+    </p>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
