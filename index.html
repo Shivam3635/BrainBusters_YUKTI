@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SymptoCare</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">🏥 SymptoCare</div>
+  <div>
+    <button class="emergency-btn" onclick="callEmergency()">🚑 Emergency</button>
+    <button class="clinic-btn" onclick="findClinics()">📍 Clinic Near Me</button>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Your Health, Our Priority</h1>
+  <p>Describe your symptoms to get instant guidance</p>
+
+  <div class="search-box">
+    <input type="text" id="symptomInput" placeholder="Example: 3 days fever and cough">
+    <button onclick="analyzeSymptoms()">Analyze</button>
+  </div>
+
+  <!-- Duration Buttons -->
+  <div class="duration-box">
+    <span>Duration:</span>
+    <button onclick="setDuration(1)">1 Day</button>
+    <button onclick="setDuration(2)">2 Days</button>
+    <button onclick="setDuration(3)">3 Days</button>
+    <button onclick="setDuration(8)">7+ Days</button>
+  </div>
+</section>
+
+<div class="result-box" id="resultBox"></div>
+
+<section class="map-section">
+  <h2>Nearby Hospitals</h2>
+  <iframe id="mapFrame" src="https://www.google.com/maps?q=hospital+near+me&output=embed"></iframe>
+</section>
+
+<footer>
+  ⚠️ This is not a medical diagnosis. Always consult a doctor.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

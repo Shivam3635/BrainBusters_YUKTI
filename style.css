@@ -1,0 +1,129 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background:#f4f7fb;
+  color:#333;
+}
+
+/* HEADER */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 8%;
+  background:white;
+  box-shadow:0 4px 10px rgba(0,0,0,0.05);
+}
+
+.logo{
+  font-size:22px;
+  font-weight:700;
+  color:#2a7de1;
+}
+
+button{
+  padding:10px 18px;
+  border:none;
+  border-radius:20px;
+  cursor:pointer;
+  font-weight:600;
+  transition:0.3s;
+}
+
+button:hover{
+  transform:scale(1.05);
+}
+
+.emergency-btn{ background:#e74c3c; color:white; }
+.clinic-btn{ background:#00b894; color:white; }
+
+/* HERO */
+.hero{
+  text-align:center;
+  padding:60px 20px;
+  background:linear-gradient(135deg,#2a7de1,#00c6ff);
+  color:white;
+}
+
+.search-box{
+  margin-top:25px;
+  display:flex;
+  justify-content:center;
+  max-width:600px;
+  margin:auto;
+}
+
+.search-box input{
+  flex:1;
+  padding:14px;
+  border:none;
+  border-radius:30px 0 0 30px;
+  outline:none;
+}
+
+.search-box button{
+  border-radius:0 30px 30px 0;
+  background:#ffcc00;
+}
+
+/* Duration */
+.duration-box{
+  margin-top:15px;
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.duration-box span{
+  font-weight:600;
+}
+
+.duration-box button{
+  background:white;
+  color:#2a7de1;
+  padding:6px 14px;
+  font-size:13px;
+}
+
+.duration-box button.active{
+  background:#ffcc00;
+  color:black;
+}
+
+/* RESULT */
+.result-box{
+  max-width:700px;
+  margin:30px auto;
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  display:none;
+}
+
+/* MAP */
+.map-section{
+  padding:40px 10%;
+  text-align:center;
+}
+
+#mapFrame{
+  width:100%;
+  height:400px;
+  border-radius:15px;
+  border:none;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:15px;
+  background:#2a7de1;
+  color:white;
+}
